@@ -1149,6 +1149,7 @@ client.on("message", async message => {
             });
         };
         if (command === "news-description") {
+		console.log(application.owner.id);
             if (message.author.id !== application.owner.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
             newsEmbedDescription = args.join(` `);
             message.channel.send(`La description de l'embed est ${newsEmbedDescription}`)

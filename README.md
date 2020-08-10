@@ -21,7 +21,7 @@
 > Informe les membres de t'es serveurs qu'un membre est arrivé ou à quitté le serveur avec une chaleureuse image.<br>
 > Le message spécifie le nom du serveur, le nom du membre, le tag du membre, la photo de profil du membre et le nombre de membres au total.
 
-<img width="500" height="307" align="left" style="float: left; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/5Fyvc35.png">
+<img width="500" height="307" align="right" style="float: right; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/5Fyvc35.png">
 <br><br><br><br><br><br><br>
 
 Les actualités de DiscordBot.Js directement dans t'es serveurs !<br>
@@ -36,7 +36,7 @@ Suis les annonces, les mises à jour de DiscordBot.js et de DiscordBot.js Canary
 > DiscordBot.js a été conçue pour te donner un **maximum** de détaille !<br>
 > Ceci est appliqués dans les évènements, les commandes et ainsi automatisé les actions de DiscordBot.js.
 
-<img align="left" style="float: left; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/Ibcw77G.png">
+<img align="right" style="float: right; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/Ibcw77G.png">
 <br><br><br><br><br><br><br><br><br>
 Affiche toutes les actions des t'es serveurs !<br><br>
 
@@ -62,7 +62,7 @@ ETC...
 
 > Avec les commandes +add-role ou +remove-role tu peut facilement ajouter/enlever un rôle à un membre.
 
-<img align="left" style="float: left; margin: 0 50px 0 0;" alt="News" src="https://i.imgur.com/8Fr5rMf.png">
+<img align="right" style="float: right; margin: 0 50px 0 0;" alt="News" src="https://i.imgur.com/8Fr5rMf.png">
 Configure t'es serveurs !<br><br>
 
 Tu peut configurer plus rapidement t'es serveurs avec la commande +setup-server.

@@ -111,7 +111,7 @@ const DBL = require("dblapi.js");
 const hastebin = require('hastebin.js');
 
 // TODO Constant - Fetch application
-const application = await client.fetchApplication()
+const application = client.fetchApplication()
 
 // TODO Constant - Poll
 const lastChar = (str) => str.split('').reverse().join(',').replace(',', '')[str.length === str.length + 1 ? 1 : 0];

@@ -15,31 +15,24 @@
 
 ## Exemple de fonctionnalité de DiscordBot.js
 
-<img width="30%" height="30%" align="right" style="float: right; margin: 0 10px 0 0;" alt="Welcome/Leave" src="https://i.imgur.com/5MZOEbV.png">
-
 > Un message de bienvenue et d'au revoir !<br>
 
 > Informe les membres de t'es serveurs qu'un membre est arrivé ou à quitté le serveur avec une chaleureuse image.<br>
 
-> Le message spécifie le nom du serveur, le nom du membre, le tag du membre, la photo de profil du membre et le nombre de membres au total.
-
-<img width="500" height="307" align="right" style="float: right; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/5Fyvc35.png">
-<br><br><br><br><br><br><br>
+> Le message spécifie le nom du serveur, le nom du membre, le tag du membre, la photo de profil du membre et le nombre de membres au total.<br>
 
 Les actualités de DiscordBot.Js directement dans t'es serveurs !<br>
 
-Suis les annonces, les mises à jour de DiscordBot.js et de DiscordBot.js Canary.
-
-<br><br>
-<img width="490" height="438" align="right" style="float: right; margin: 0 10px 0 0;" alt="Welcome/Leave" src="https://i.imgur.com/Tu0yOhS.png">
+Suis les annonces, les mises à jour de DiscordBot.js et de DiscordBot.js Canary.<br>
 
 > Affiche les informations de t'es serveurs !
-> Tu veut des détailles sur un serveur, un salon, un membre, un rôle ou tout simplement le bot ?<br>
-> DiscordBot.js a été conçue pour te donner un **maximum** de détaille !<br>
-> Ceci est appliqués dans les évènements, les commandes et ainsi automatisé les actions de DiscordBot.js.
 
-<img align="right" style="float: right; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/Ibcw77G.png">
-<br><br><br><br><br><br><br><br><br>
+> Tu veut des détailles sur un serveur, un salon, un membre, un rôle ou tout simplement le bot ?<br>
+
+> DiscordBot.js a été conçue pour te donner un **maximum** de détaille !<br>
+
+> Ceci est appliqués dans les évènements, les commandes et ainsi automatisé les actions de DiscordBot.js.<br>
+
 Affiche toutes les actions des t'es serveurs !<br><br>
 
 DiscordBot.js te permet de savoir qui a effectué une action par exemple: supprimé un message, crée un salon, supprimer un rôle, etc...<br>
@@ -51,10 +44,7 @@ Quand un membre quitte le serveur.<br>
 Quand un message est supprimé.<br>
 Quand un message est édité.<br>
 Quand un salon est crée.<br>
-ETC...
-
-<br>
-<img width="442" height="611" align="right" style="float: right; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/2TxwClB.png">
+ETC...<br>
 
 > Utilise les fonctionnalités de Discord plus rapidement !<br>
 
@@ -62,9 +52,8 @@ ETC...
 
 > Elle permet aussi d'envoyer du code d'une langue de programmation.
 
-> Avec les commandes +add-role ou +remove-role tu peut facilement ajouter/enlever un rôle à un membre.
+> Avec les commandes +add-role ou +remove-role tu peut facilement ajouter/enlever un rôle à un membre.<br>
 
-<img align="right" style="float: right; margin: 0 50px 0 0;" alt="News" src="https://i.imgur.com/8Fr5rMf.png">
 Configure t'es serveurs !<br><br>
 
 Tu peut configurer plus rapidement t'es serveurs avec la commande +setup-server.

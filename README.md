@@ -21,9 +21,9 @@
 
 > Le message spécifie le nom du serveur, le nom du membre, le tag du membre, la photo de profil du membre et le nombre de membres au total.<br>
 
-Les actualités de DiscordBot.Js directement dans t'es serveurs !<br>
+> Les actualités de DiscordBot.Js directement dans t'es serveurs !<br>
 
-Suis les annonces, les mises à jour de DiscordBot.js et de DiscordBot.js Canary.<br>
+> Suis les annonces, les mises à jour de DiscordBot.js et de DiscordBot.js Canary.<br>
 
 > Affiche les informations de t'es serveurs !
 
@@ -33,18 +33,18 @@ Suis les annonces, les mises à jour de DiscordBot.js et de DiscordBot.js Canary
 
 > Ceci est appliqués dans les évènements, les commandes et ainsi automatisé les actions de DiscordBot.js.<br>
 
-Affiche toutes les actions des t'es serveurs !<br><br>
+> Affiche toutes les actions des t'es serveurs !<br>
 
-DiscordBot.js te permet de savoir qui a effectué une action par exemple: supprimé un message, crée un salon, supprimer un rôle, etc...<br>
+> DiscordBot.js te permet de savoir qui a effectué une action par exemple: supprimé un message, crée un salon, supprimer un rôle, etc...<br>
 
-Les évènements qui sont disponibles sont:<br>
+> Les évènements qui sont disponibles sont:<br>
 
-Quand un membre rejoins le serveur.<br>
-Quand un membre quitte le serveur.<br>
-Quand un message est supprimé.<br>
-Quand un message est édité.<br>
-Quand un salon est crée.<br>
-ETC...<br>
+> Quand un membre rejoins le serveur.<br>
+> Quand un membre quitte le serveur.<br>
+> Quand un message est supprimé.<br>
+> Quand un message est édité.<br>
+> Quand un salon est crée.<br>
+> ETC...<br>
 
 > Utilise les fonctionnalités de Discord plus rapidement !<br>
 
@@ -54,17 +54,17 @@ ETC...<br>
 
 > Avec les commandes +add-role ou +remove-role tu peut facilement ajouter/enlever un rôle à un membre.<br>
 
-Configure t'es serveurs !<br><br>
+> Configure t'es serveurs !<br>
 
-Tu peut configurer plus rapidement t'es serveurs avec la commande +setup-server.
+> Tu peut configurer plus rapidement t'es serveurs avec la commande +setup-server.
 
-Elle inclus les rôles: Administrateur, Modérateur, Notifications et Bot.
+> Elle inclus les rôles: Administrateur, Modérateur, Notifications et Bot.
 
-Le salon règles qui permet de définir les règles de bases d'un serveur.
+> Le salon règles qui permet de définir les règles de bases d'un serveur.
 
-Un salon logs qui est déjà configurer pour logger toutes les actions du serveur, des membres...
+> Un salon logs qui est déjà configurer pour logger toutes les actions du serveur, des membres...
 
-Les permissions sont déjà configurer par défaut pour une modération optimale pour vos serveurs !
+> Les permissions sont déjà configurer par défaut pour une modération optimale pour vos serveurs !
 
 ## Liste des commandes:
 

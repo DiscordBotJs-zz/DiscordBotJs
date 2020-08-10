@@ -354,7 +354,6 @@ process.on('unhandledRejection', error => console.error(`❌ - Le bot a rencontr
 client.on('guildMemberAdd', async member => {
     try {
         if (member.guild.id === "264445053596991498") return;
-        const applicationFetch = client.users.cache.get(application.owner.id)
         const channel = getDefaultChannel(member.guild)
         const name = member.displayName.length > 20 ? member.displayName.substring(0, 20) + "..." : member.displayName;
         const server = member.guild.name.length > 11 ? member.guild.name.substring(0, 11) + "..." : member.guild.name;
@@ -533,7 +532,7 @@ client.on('guildMemberAdd', async member => {
         };
         let message_bienvenue_aléatoire = message_aléatoire;
 
-        if (member.id === applicationFetch.id) {
+        if (member.id === "609174280734900226") {
             message_bienvenue_aléatoire = `Oh mon dieu ! ${member} Le créateur de ${client.user} a rejoint ${member.guild.name} !`;
         };
 
@@ -548,7 +547,6 @@ client.on('guildMemberAdd', async member => {
 client.on("guildMemberRemove", async member => {
     try {
         if (member.guild.id === "264445053596991498") return;
-        const applicationFetch = client.users.cache.get(application.owner.id)
         const channel = getDefaultChannel(member.guild)
         const name = member.displayName.length > 13 ? member.displayName.substring(0, 13) + "..." : member.displayName;
         const server = member.guild.name.length > 21 ? member.guild.name.substring(0, 21) + "..." : member.guild.name;
@@ -581,9 +579,9 @@ client.on("guildMemberRemove", async member => {
         ctx.drawImage(avatar, 25, 25, 200, 200);
 
         const attachment = new MessageAttachment(canvas.toBuffer(), 'leave.png');
-        if (member.id === applicationFetch.id) {
+        if (member.id === "609174280734900226") {
             channel.send(`Oh non :sob: ${member} Le créateur de ${client.user} a quitté ${member.guild.name} !`, attachment);
-        } else if (member.id !== applicationFetch.id) {
+        } else if (member.id !== "609174280734900226") {
             channel.send(attachment);
         };
         console.log(`${member.user.username} a quitté ${member.guild.name} (${member.guild.id})`);
@@ -1076,11 +1074,10 @@ client.on('message', async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (command === "join") {
-        if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+        if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
         client.emit('guildMemberAdd', message.member || await message.guild.fetchMember(message.author));
     }
 });
@@ -1091,11 +1088,10 @@ client.on('message', async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (command === "quit") {
-        if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+        if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
         client.emit('guildMemberRemove', message.member || await message.guild.fetchMember(message.author));
     }
 });
@@ -1106,7 +1102,6 @@ client.on("message", async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -1149,29 +1144,29 @@ client.on("message", async message => {
             });
         };
         if (command === "news-description") {
-            if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+            if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
             newsEmbedDescription = args.join(` `);
             message.channel.send(`La description de l'embed est ${newsEmbedDescription}`)
         };
         if (command === "news-thumbnail") {
-            if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+            if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
             newsEmbedThumbnail = args.join(` `);
             message.channel.send(`Le thumbnail de l'embed est ${newsEmbedThumbnail}`)
         };
         if (command === "news-picture") {
-            if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+            if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
             newsEmbedPicture = args.join(` `);
             message.channel.send(`L'image de l'embed est ${newsEmbedPicture}`)
         };
         if (command === "news-reset") {
-            if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+            if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
             newsEmbedDescription = undefined;
             newsEmbedThumbnail = undefined;
             newsEmbedPicture = undefined;
             message.channel.send(`Les valeurs ont bien été réinitialiser !`);
         };
         if (command === "news-send-dbjs") {
-            if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+            if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
             const embed1 = new MessageEmbed()
                 .setColor(`${config.colorembed}`)
                 .setAuthor(`${message.author.tag} (${message.author.id})`, message.author.displayAvatarURL({
@@ -1193,7 +1188,7 @@ client.on("message", async message => {
 	    });
         };
         if (command === "news-send-dbjscanary") {
-            if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !")
+            if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !")
             const embed2 = new MessageEmbed()
                 .setColor(`${config.colorembed}`)
                 .setAuthor(`${message.author.tag} (${message.author.id})`, message.author.displayAvatarURL({
@@ -1385,7 +1380,6 @@ client.on("message", async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -1411,7 +1405,7 @@ client.on("message", async message => {
                 } else if (client.guilds.cache.size >= 2) {
                     embed.addField("Sur", `${client.guilds.cache.size} Serveurs`, true)
                 }
-                embed.addField("Developpeur", `${applicationFetch.tag}`, true)
+                embed.addField("Developpeur", `Alex Animate Mp4#2361`, true)
                 embed.addField("Site web", `${config.website}`, true)
                 embed.addField("Serveur Support", `${config.invitesupport}`, true)
                 embed.addField("Dépôts Github", `${config.github}`, true)
@@ -2377,7 +2371,6 @@ client.on("message", message => {
 client.on("message", async message => {
     if (!message.guild || message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -2463,7 +2456,7 @@ client.on("message", async message => {
                     dynamic: true
                 }));
             message.channel.send(embed4);
-            if (message.author.id === applicationFetch.id) {
+            if (message.author.id === "609174280734900226") {
                 const embed5 = new MessageEmbed()
                     .setColor(`${config.colorembed}`)
                     .setAuthor(`${message.author.tag} (${message.author.id})`, message.author.displayAvatarURL({
@@ -2680,7 +2673,6 @@ client.on('message', async message => {
     if (!message.guild) return;
     if (!message.guild.available) return;
     if (message.author.bot) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -2709,7 +2701,7 @@ client.on('message', async message => {
             }
 
             if (commandeType === 'setxp') {
-                if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !");
+                if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !");
                 if (!user1) return message.reply(`Vous devez mentionné un membre !`);
                 await dl.SetXp(user1.id, amount)
                 const embedsetxp = new MessageEmbed()
@@ -2728,7 +2720,7 @@ client.on('message', async message => {
             }
 
             if (commandeType === 'setlevel') {
-                if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !");
+                if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !");
                 if (!user1) return message.reply(`Vous devez mentionné un membre !`);
                 await dl.SetLevel(user1.id, amount)
                 const embedsetlevel = new MessageEmbed()
@@ -2826,7 +2818,7 @@ client.on('message', async message => {
             }
 
             if (commandeType == 'delete') {
-                if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !");
+                if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !");
                 if (!user2) return message.reply(`S'il vous plait mentionné un membre valide qui se trouve dans la base de donnée !`)
                 let output = await dl.Delete(user2.id)
                 if (output.deleted == true) return message.reply('Le membre a bien était éffacé de la base de donnée')
@@ -4149,14 +4141,13 @@ client.on('message', async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
         if (command === "money") {
             const commandeType = args[0];
             if (commandeType === "add") {
-                if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !");
+                if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !");
                 if (!args[1]) return message.reply(`S'il vous plaît, veuillez spécifier une valeur.`)
                 if (isNaN(args[1])) return message.reply(`Ce n'est pas un nombre valide !`)
         
@@ -4165,7 +4156,7 @@ client.on('message', async message => {
                 db.add(`money_${message.guild.id}_${message.author.id}`, args[1])
             }
             if (commandeType === "remove") {
-                if (message.author.id !== applicationFetch.id) return message.reply("Désolé, Vous n'avez pas les permissions !");
+                if (message.author.id !== "609174280734900226") return message.reply("Désolé, Vous n'avez pas les permissions !");
                 if (!args[1]) return message.reply(`S'il vous plaît, veuillez spécifier une valeur.`)
                 if (isNaN(args[1])) return message.reply(`Ce n'est pas un nombre valide !`)
         

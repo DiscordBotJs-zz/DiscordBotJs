@@ -354,7 +354,7 @@ process.on('unhandledRejection', error => console.error(`❌ - Le bot a rencontr
 client.on('guildMemberAdd', async member => {
     try {
         if (member.guild.id === "264445053596991498") return;
-        const applicationFetch = client.users.cache.get(applicationFetch.id)
+        const applicationFetch = client.users.cache.get(application.owner.id)
         const channel = getDefaultChannel(member.guild)
         const name = member.displayName.length > 20 ? member.displayName.substring(0, 20) + "..." : member.displayName;
         const server = member.guild.name.length > 11 ? member.guild.name.substring(0, 11) + "..." : member.guild.name;
@@ -548,7 +548,7 @@ client.on('guildMemberAdd', async member => {
 client.on("guildMemberRemove", async member => {
     try {
         if (member.guild.id === "264445053596991498") return;
-        const applicationFetch = client.users.cache.get(applicationFetch.id)
+        const applicationFetch = client.users.cache.get(application.owner.id)
         const channel = getDefaultChannel(member.guild)
         const name = member.displayName.length > 13 ? member.displayName.substring(0, 13) + "..." : member.displayName;
         const server = member.guild.name.length > 21 ? member.guild.name.substring(0, 21) + "..." : member.guild.name;
@@ -1076,7 +1076,7 @@ client.on('message', async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (command === "join") {
@@ -1091,7 +1091,7 @@ client.on('message', async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (command === "quit") {
@@ -1106,7 +1106,7 @@ client.on("message", async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -1385,7 +1385,7 @@ client.on("message", async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -2377,7 +2377,7 @@ client.on("message", message => {
 client.on("message", async message => {
     if (!message.guild || message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -2680,7 +2680,7 @@ client.on('message', async message => {
     if (!message.guild) return;
     if (!message.guild.available) return;
     if (message.author.bot) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {
@@ -4149,7 +4149,7 @@ client.on('message', async message => {
     if (!message.guild.available) return;
     if (message.author.bot) return;
     if (message.content.indexOf(guildConf[message.guild.id].prefix) !== 0) return;
-    const applicationFetch = client.users.cache.get(applicationFetch.id)
+    const applicationFetch = client.users.cache.get(application.owner.id)
     const args = message.content.slice(guildConf[message.guild.id].prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     try {

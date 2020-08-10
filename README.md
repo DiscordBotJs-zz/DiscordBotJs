@@ -15,10 +15,12 @@
 
 ## Exemple de fonctionnalité de DiscordBot.js
 
-<img width="450" height="320" align="right" style="float: right; margin: 0 10px 0 0;" alt="Welcome/Leave" src="https://i.imgur.com/5MZOEbV.png">
+<img width="30%" height="30%" align="right" style="float: right; margin: 0 10px 0 0;" alt="Welcome/Leave" src="https://i.imgur.com/5MZOEbV.png">
 
 > Un message de bienvenue et d'au revoir !<br>
+
 > Informe les membres de t'es serveurs qu'un membre est arrivé ou à quitté le serveur avec une chaleureuse image.<br>
+
 > Le message spécifie le nom du serveur, le nom du membre, le tag du membre, la photo de profil du membre et le nombre de membres au total.
 
 <img width="500" height="307" align="right" style="float: right; margin: 0 10px 0 0;" alt="News" src="https://i.imgur.com/5Fyvc35.png">

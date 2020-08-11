@@ -1358,7 +1358,7 @@ client.on("message", async message => {
                     embed.addField("Rôles", `${roless.size} Rôles`, true)
                 } else if (roless.size < 7) {
                     if (roless.size == 0) {
-                        embed.addField("Emojis", `Aucun rôles`, true)
+                        embed.addField("Rôles", `Aucun rôles`, true)
                     } else if (roless.size > 0) {
                         embed.addField("Rôles", `${roless.size} Rôles: ${roless.map(role => `${role}`).join(', ')}`, false)
                     }

@@ -298,7 +298,7 @@ client.on('guildCreate', (guild) => {
             }
         }; // 💬 - This is triggered if the database does not detect data from the server.
         fs.writeFile('./config.json', JSON.stringify(guildConf, null, 2), (err) => {
-            if (err) return console.error(`❌ - La base de donnée a rencontré une erreur !\n`, err); // 📕 - If this is triggered, the database has encountered an error!
+            if (err) return console.error(`❌ - La base de données a rencontrée une erreur !\n`, err); // 📕 - If this is triggered, the database has encountered an error!
         }); // 💬 - This allows you to create or update the database.
     } catch (err) {
         console.error(`❌ - ${client.user.username} (${client.user.id}) a rencontré une erreur dans le serveur ${guild.name} (${guild.id}) !\n`, err);
@@ -310,7 +310,7 @@ client.on('guildDelete', (guild) => {
     try {
         delete guildConf[guild.id]; // 💬 - This removes a server from the database.
         fs.writeFile('./config.json', JSON.stringify(guildConf, null, 2), (err) => {
-            if (err) return console.error(`❌ - La base de donnée a rencontré une erreur !\n`, err); // 📕 - If this is triggered, the database has encountered an error!
+            if (err) return console.error(`❌ - La base de données a rencontrée une erreur !\n`, err); // 📕 - If this is triggered, the database has encountered an error!
         }); // 💬 - This allows you to create or update the database.
     } catch (err) {
         console.error(`❌ - ${client.user.username} (${client.user.id}) a rencontré une erreur dans le serveur ${guild.name} (${guild.id}) !\n`, err);
@@ -826,7 +826,7 @@ client.on("guildBanAdd", async (banguild, banuser) => {
             .setAuthor(`${entry.executor.tag} (${entry.executor.id})`, entry.executor.displayAvatarURL({
                 dynamic: true
             }) || "")
-            .setTitle('Vous avez était banni !')
+            .setTitle('Vous avez été banni !')
             .addField("Serveur", `${banguild.name}`)
             .addField("Serveur ID", `${banguild.id}`)
             .addField("Raison", entry.reason || "Aucune raison")

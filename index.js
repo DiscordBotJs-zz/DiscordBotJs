@@ -1405,11 +1405,11 @@ client.on("message", async message => {
                 } else if (client.guilds.cache.size >= 2) {
                     embed.addField("Sur", `${client.guilds.cache.size} Serveurs`, true)
                 }
-                embed.addField("Developpeur", `Alex Animate Mp4#2361`, true)
+                embed.addField("Développeur", `Alex Animate Mp4#2361`, true)
                 embed.addField("Site web", `${config.website}`, true)
                 embed.addField("Serveur Support", `${config.invitesupport}`, true)
-                embed.addField("Dépôts Github", `${config.github}`, true)
-                embed.addField(`Vidéo Présentation`, `${config.videopresentation}`, true)
+                embed.addField("Dépôt Github", `${config.github}`, true)
+                embed.addField(`Vidéo de présentation du Bot`, `${config.videopresentation}`, true)
                 embed.setTimestamp()
                 embed.setFooter(client.user.tag, client.user.displayAvatarURL({
                     dynamic: true
